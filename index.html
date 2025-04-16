@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Bảo Hiểm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold" href="#">
+                <img src="./IMG/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Trang Chủ</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dịch Vụ Bảo Hiểm
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="./HTML/chitiet_suckhoe.html">Bảo Hiểm Sức Khỏe</a></li>
+                            <li><a class="dropdown-item" href="./HTML/chitiet_nhacua.html">Bảo Hiểm Nhà Ở</a></li>
+                            <li><a class="dropdown-item" href="./HTML/chitiet_dulich.html">Bảo Hiểm Du Lịch</a></li>
+                            <li><a class="dropdown-item" href="./HTML/chitiet_giaoduc.html">Bảo Hiểm Giáo Dục</a></li>
+                            <li><a class="dropdown-item" href="./HTML/chitiet_tainan.html">Bảo Hiểm Tai Nạn Cá Nhân</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./HTML/chitiet_thucung.html">Bảo Hiểm Thú Cưng</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Về Chúng Tôi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Liên Hệ</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto" id="auth-nav">
+                    <li class="nav-item"><a class="nav-link" href="./HTML/dangnhap.html">Đăng Nhập</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./HTML/dangky.html">Đăng Ký</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Bảo Vệ Tương Lai Của Bạn</h1>
+            <p class="lead fs-4 mb-5">Giải pháp bảo hiểm toàn diện với mức phí hợp lý nhất</p>
+            <a href="#services" class="btn btn-primary btn-lg px-4 py-2">
+                <i class="fas fa-search me-2"></i>Khám Phá Ngay
+            </a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-hand-holding-medical"></i>
+                        </div>
+                        <div>
+                            <h5>Bảo Vệ Sức Khỏe</h5>
+                            <p class="mb-0">Chăm sóc y tế chất lượng cao</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div>
+                            <h5>An Toàn Tài Sản</h5>
+                            <p class="mb-0">Bảo vệ ngôi nhà và tài sản của bạn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-globe-asia"></i>
+                        </div>
+                        <div>
+                            <h5>Du Lịch An Tâm</h5>
+                            <p class="mb-0">Bảo hiểm mọi chuyến đi của bạn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5" id="services">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Các Gói Bảo Hiểm Nổi Bật</h2>
+                <p class="lead text-muted">Lựa chọn gói bảo hiểm phù hợp với nhu cầu của bạn</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card insurance-card">
+                        <img src="./IMG/h1.jpg" class="card-img-top" alt="Bảo hiểm sức khỏe">
+                        <div class="card-body">
+                            <h5 class="card-title">Bảo Hiểm Sức Khỏe</h5>
+                            <p class="text-muted">Từ 5.000.000đ/năm</p>
+                            <p class="card-text">Bảo vệ sức khỏe toàn diện cho bạn và gia đình</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="./HTML/chitiet_suckhoe.html" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card insurance-card">
+                        <img src="./IMG/h2.jpg" class="card-img-top" alt="Bảo hiểm nhà cửa">
+                        <div class="card-body">
+                            <h5 class="card-title">Bảo Hiểm Nhà Cửa</h5>
+                            <p class="text-muted">Từ 3.000.000đ/năm</p>
+                            <p class="card-text">Bảo vệ ngôi nhà của bạn trước mọi rủi ro</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="./HTML/chitiet_nhacua.html" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card insurance-card">
+                        <img src="./IMG/h3.jpg" class="card-img-top" alt="Bảo hiểm du lịch">
+                        <div class="card-body">
+                            <h5 class="card-title">Bảo Hiểm Du Lịch</h5>
+                            <p class="text-muted">Từ 1.500.000đ/chuyến</p>
+                            <p class="card-text">Yên tâm tận hưởng mọi chuyến đi</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="./HTML/chitiet_dulich.html" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card insurance-card">
+                        <img src="./IMG/h4.png" class="card-img-top" alt="Bảo hiểm giáo dục">
+                        <div class="card-body">
+                            <h5 class="card-title">Bảo Hiểm Giáo Dục</h5>
+                            <p class="text-muted">Từ 6.000.000đ/năm</p>
+                            <p class="card-text">Đảm bảo tương lai học vấn cho con bạn</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="./HTML/chitiet_giaoduc.html" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card insurance-card">
+                        <img src="./IMG/h5.jpg" class="card-img-top" alt="Bảo hiểm tai nạn cá nhân">
+                        <div class="card-body">
+                            <h5 class="card-title">Bảo Hiểm Tai Nạn Cá Nhân</h5>
+                            <p class="text-muted">Từ 2.000.000đ/năm</p>
+                            <p class="card-text">Bảo vệ bạn trước những sự cố bất ngờ</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="./HTML/chitiet_tainan.html" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card insurance-card">
+                        <img src="./IMG/h6.jpg" class="card-img-top" alt="Bảo hiểm thú cưng">
+                        <div class="card-body">
+                            <h5 class="card-title">Bảo Hiểm Thú Cưng</h5>
+                            <p class="text-muted">Từ 1.500.000đ/năm</p>
+                            <p class="card-text">Chăm sóc sức khỏe cho người bạn bốn chân</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="./HTML/chitiet_thucung.html" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5 bg-light" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">Về Chúng Tôi</h2>
+                    <p class="lead">Bảo Hiểm An Tâm - Đồng hành cùng bạn hơn 10 năm</p>
+                    <p>Với kinh nghiệm hoạt động trong lĩnh vực bảo hiểm hơn 10 năm, chúng tôi tự hào mang đến những
+                        giải pháp bảo hiểm tối ưu nhất cho khách hàng. Đội ngũ chuyên gia giàu kinh nghiệm luôn sẵn sàng
+                        tư vấn và hỗ trợ 24/7.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Bồi thường nhanh chóng
+                        </li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Hỗ trợ khách hàng 24/7
+                        </li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Giá cả cạnh tranh</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="./IMG/about.jpg" class="img-fluid rounded shadow w-100" alt="Về chúng tôi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-4">Bảo Hiểm An Tâm</h5>
+                    <p>Giải pháp bảo hiểm toàn diện cho mọi nhu cầu của bạn và gia đình.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-4">Liên Hệ</h5>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</p>
+                        <p><i class="fas fa-phone-alt"></i> 0966 795 333</p>
+                        <p><i class="fas fa-envelope"></i> info@baohiemantam.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-4">Kết Nối Với Chúng Tôi</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="text-center">
+                <p class="mb-0">© 2023 Bảo Hiểm An Tâm. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const user = JSON.parse(localStorage.getItem('currentUser'));
+        const authNav = document.getElementById('auth-nav');
+
+        if (user) {
+            authNav.innerHTML = `
+            <li class="nav-item">
+                <span class="nav-link text-white">Xin chào, ${user.name}</span>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../HTML/giohang.html">Giỏ Hàng</a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-danger ms-2" onclick="logout()">Đăng Xuất</button>
+            </li>
+        `;
+        } else {
+            authNav.innerHTML = `
+            <li class="nav-item"><a class="nav-link" href="../HTML/dangnhap.html">Đăng Nhập</a></li>
+            <li class="nav-item"><a class="nav-link" href="../HTML/dangky.html">Đăng Ký</a></li>
+        `;
+        }
+
+        function logout() {
+            localStorage.removeItem('currentUser');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+
+</html>
