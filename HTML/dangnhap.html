@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng Nhập</title>
-    <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
+    <link href="../Bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/dangnhap.css">
 
 </head>
@@ -21,6 +21,9 @@
                 <input type="password" class="form-control" id="password" placeholder="Mật khẩu" required>
             </div>
             <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+            <div class="text-center mt-2">
+                <a href="../index.html" class="btn btn-secondary w-100">Quay lại</a>
+            </div>
             <p class="mt-3 text-center">Chưa có tài khoản? <a href="./dangky.html">Đăng ký ngay</a></p>
         </form>
     </div>
@@ -28,21 +31,13 @@
     <script>
         document.getElementById('login-form').addEventListener('submit', function (e) {
             e.preventDefault();
-
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
-
-            // Lấy danh sách người dùng từ localStorage
             const users = JSON.parse(localStorage.getItem('users')) || [];
-
-            // Tìm người dùng phù hợp
             const user = users.find(u => u.email === email && u.password === password);
 
             if (user) {
-                // Lưu thông tin người dùng hiện tại
                 localStorage.setItem('currentUser', JSON.stringify(user));
-
-                // Hiển thị thông báo và chuyển hướng
                 alert('Đăng nhập thành công!');
                 window.location.href = '../index.html';
             } else {
