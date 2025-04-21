@@ -56,7 +56,7 @@
             let isValid = true;
 
             // Kiểm tra họ tên 
-            const nameRegex = /^[\p{L}\s]+$/;
+            const nameRegex = /^[A-Z][a-z]*(\s[A-Z][a-z]*)+$/;
             if (!nameRegex.test(name)) {
                 document.getElementById('name').classList.add('is-invalid');
                 document.getElementById('name-feedback').style.display = 'block';
@@ -114,7 +114,7 @@
 
         // Thêm validation real-time
         document.getElementById('name').addEventListener('input', function () {
-            const nameRegex = /^[\p{L}\s]+$/;
+            const nameRegex = /^[A-Z][a-z]*(\s[A-Z][a-z]*)+$/;
             if (!nameRegex.test(this.value)) {
                 this.classList.add('is-invalid');
                 document.getElementById('name-feedback').style.display = 'block';
